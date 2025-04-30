@@ -13,9 +13,7 @@ function sumValues(num1, num2, add) {
 
         return result;
     }
-    else {
-        return !add;
-    }
+    else return false;
 }
 
 /**
@@ -36,5 +34,5 @@ function discountPrices(prices, discount) {
 
     return discounted;
 }
-
+console.log(sumValues(2, 4, false));
 module.exports = {sumValues, discountPrices};

@@ -6,6 +6,9 @@
  * @returns The sum of the two numbers if add is true and false otherwise.
  */
 function sumValues(num1, num2, add) {
+    if (!(typeof num1 === 'number') || !(typeof num2 === 'number') || !(typeof add === 'boolean')) {
+        return false;
+    }
     if (add) {
         let result = 0;
 
@@ -34,5 +37,5 @@ function discountPrices(prices, discount) {
 
     return discounted;
 }
-console.log(sumValues(2, 4, false));
+console.log(sumValues(true, 3, false));
 module.exports = {sumValues, discountPrices};
